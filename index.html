@@ -9,19 +9,82 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Netflix Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#tv-shows-section">TV Shows</a></li>
+                <li><a href="#movies-section">Movies</a></li>
+                <li><a href="#new-popular-section">New & Popular</a></li>
+                <li><a href="#my-list-section">My List</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button id="search-button">Search</button>
         </div>
     </header>
-    
+
     <main>
-        <section class="movie-section">
+        <section class="hero" id="hero">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button class="cta-button">Get Started</button>
+        </section>
+
+        <section class="movie-section" id="popular-movies-section">
             <h2>Popular Movies</h2>
-            <div class="movie-container" id="movie-container">
-                <!-- Movie posters will be dynamically added here -->
+            <div class="movie-container" id="popular-movie-container">
+                <!-- Popular Movies will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="movie-section" id="tv-shows-section">
+            <h2>TV Shows</h2>
+            <div class="movie-container" id="tv-shows-container">
+                <!-- TV Shows will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="movie-section" id="movies-section">
+            <h2>Movies</h2>
+            <div class="movie-container" id="movies-container">
+                <!-- Movies will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="movie-section" id="new-popular-section">
+            <h2>New & Popular</h2>
+            <div class="movie-container" id="new-popular-container">
+                <!-- New & Popular will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="movie-section" id="my-list-section">
+            <h2>My List</h2>
+            <div class="movie-container" id="my-list-container">
+                <!-- My List items will be dynamically added here -->
             </div>
         </section>
     </main>
-    
+
+    <footer>
+        <p>&copy; 2024 Netflix Clone. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
