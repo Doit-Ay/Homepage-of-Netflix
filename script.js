@@ -54,6 +54,8 @@ function openMovieDetails(movieId) {
         .catch(error => console.error('Error fetching movie details:', error));
 }
 
+
+
 document.querySelector('.close-button').addEventListener('click', () => {
     document.getElementById('modal').style.display = 'none';
 });
